@@ -1,0 +1,20 @@
+package timus;
+
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class task1877 {
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        PrintWriter out = new PrintWriter(System.out);
+
+        int a = in.nextInt();
+        int b = in.nextInt();
+
+        // На 1 замке всегда чёт, на 2 нечёт
+        String res = a % 2 == 0 || b % 2 == 1 ? "yes" : "no";
+
+        out.println(res);
+        out.flush();
+    }
+}
