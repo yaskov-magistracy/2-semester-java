@@ -1,4 +1,4 @@
-package timus;
+package lr3;
 
 import java.io.PrintWriter;
 import java.util.*;
