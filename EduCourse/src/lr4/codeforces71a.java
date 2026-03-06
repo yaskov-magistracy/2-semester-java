@@ -10,17 +10,18 @@ public class codeforces71a {
         PrintWriter out = new PrintWriter(System.out);
 
         int n = in.nextInt();
-        HashSet<String> results = new HashSet<String>();
+        String[] results = new String[n];
         for (int i = 0; i < n;i++){
-            String word = in.nextLine();
+            String word = in.next();
             int length = word.length();
+            // обрезаем если надо
             if (length > 10){
                 word = word.charAt(0) 
                     + Integer.toString(length - 2) 
                     + word.charAt(length - 1);
             }
 
-            results.add(word);
+            results[i] = word;
         }
 
         for (String res : results)
